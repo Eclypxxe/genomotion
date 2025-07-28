@@ -1,4 +1,3 @@
-// src/main.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -10,15 +9,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   </React.StrictMode>
 );
 
-// Registro del Service Worker para PWA
+// 👉 Registro del Service Worker adaptado a GitHub Pages
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/genomotion/service-worker.js')
-      .then(registration => {
-        console.log('Service Worker registrado con éxito:', registration.scope);
-      })
-      .catch(error => {
-        console.error('Error registrando Service Worker:', error);
-      });
+    navigator.serviceWorker
+      .register('/genomotion/service-worker.js')
+      .then((reg) => console.log('✅ SW registrado:', reg.scope))
+      .catch((err) => console.error('❌ Error al registrar SW:', err));
   });
 }
