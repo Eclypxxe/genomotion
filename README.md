@@ -15,31 +15,6 @@
 - 🌈 Diseño claro, seguro y centrado en la persona
 
 ---
-
-## 📦 Estructura del proyecto
-
-public/
-├── index.html
-├── manifest.json
-├── service-worker.js
-├── icon-192.png
-└── icon-512.png
-
-src/
-├── main.tsx
-└── GenogramaEmocionalApp.tsx
----
-
-## 🛠 Cómo usar en GitHub Pages
-
-1. Sube todo el contenido de este repositorio a tu rama `main`.
-2. Ve a `Settings > Pages` y selecciona:
-   - **Source**: `main`
-   - **Folder**: `/root`
-3. Accede a tu app en `https://<tu-usuario>.github.io/genomotion/`
-
----
-
 ## 📱 Cómo instalar como app móvil
 
 1. Abre la app en tu navegador móvil.
