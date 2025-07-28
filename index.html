@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genomotion</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1e3a8a" />
+</head>
+<body>
+  <main>
+    <h1>Genomotion: Guía Interactiva</h1>
+    <div id="app"></div>
+    <button id="saveBtn">Guardar respuestas</button>
+    <p id="savedMsg"></p>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('✅ SW registrado:', reg.scope))
+        .catch(err => console.error('❌ Error al registrar SW:', err));
+    }
+  </script>
+</body>
+</html>
