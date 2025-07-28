@@ -1,18 +1,20 @@
 {
   "name": "Genomotion",
   "short_name": "Genomotion",
-  "start_url": ".",
+  "start_url": "/genomotion/",
+  "scope": "/genomotion/",
   "display": "standalone",
   "background_color": "#f8fafc",
   "theme_color": "#1e3a8a",
+  "description": "Guía interactiva para trabajar el genograma emocional",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "/genomotion/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-512.png",
+      "src": "/genomotion/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
